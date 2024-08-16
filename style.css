@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fraunces", "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2ebe3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 35rem;
+  overflow: hidden;
+  margin: 2.4rem 0;
+}
+
+.img-container {
+  background-image: url("images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 7 / 5;
+}
+
+.context {
+  padding: 1.8rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.context h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(108, 114, 137);
+}
+
+.context h1 {
+  font-size: 3rem;
+}
+
+.context p {
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: rgb(108, 114, 137);
+}
+
+.price {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.new-price {
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: rgb(60, 128, 103);
+}
+
+.old-price {
+  font-size: 1.4rem;
+  color: rgb(108, 114, 137);
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: rgb(60, 128, 103);
+  border: none;
+  padding: 1.2rem;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(35, 75, 60);
+}
+
+.btn a {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    max-width: 70rem;
+    height: 470px;
+  }
+
+  .img-container {
+    background-image: url("images/image-product-desktop.jpg");
+    width: 50%;
+    height: 100%;
+  }
+  .context {
+    flex: 1;
+    padding: 2.4rem 3rem;
+  }
+
+  .context h1 {
+    font-size: 4.4rem;
+  }
+}
